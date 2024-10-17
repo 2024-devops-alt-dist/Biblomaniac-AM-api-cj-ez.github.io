@@ -1,8 +1,11 @@
+/* Desktop nav CSS */
+
 .desktop-nav {
     border-bottom: 0.1em solid #000;
     margin-top: 0.5em;
     padding-bottom: 0.5em;
 }
+
 .desktop-nav ul {
     display: flex;
     justify-content: space-around;
@@ -10,9 +13,65 @@
     padding: 0;
 }
 
-.desktop-nav ul nav-item {
+.nav-item {
     display: flex;
+    flex: 5;
+    gap: 2em;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-item figure {
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-grp {
+    display: flex;
+    flex: 1;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.btn {
+    background-color: #7F56D9;
+    color: #ffffff;
+    width: 75px;
+    height: 35px;
+    border-radius: 8px;
+    border-color: #7F56D9;
+}
+
+/* Mobile nav CSS */
+
+.mobile-title {
+    margin: 1em;
+}
+
+.mobile-nav {
+    position:fixed;
+    bottom: 0;
     width: 100%;
+    border-top: 0.1em solid #000;
+}
+
+.mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-icon {
+    width: 2em;
+    height: 2em;
+    fill: #7F56D9;
+    margin: 1em 0;
 }
