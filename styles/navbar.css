@@ -1,0 +1,18 @@
+.desktop-nav {
+    border-bottom: 0.1em solid #000;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.desktop-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.desktop-nav ul nav-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
