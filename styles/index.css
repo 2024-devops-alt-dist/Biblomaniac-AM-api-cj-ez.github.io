@@ -1,3 +1,6 @@
+@import url("activity_card.css");
+@import url("navbar.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +12,15 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .desktop-nav {
+    .desktop-nav,
+    .desktop-title {
         display: none;
     }
 }
 @media screen and (min-width: 800px) {
-    .mobile-title {
-        display: none;
-    }
-
+    .mobile-title,
     .mobile-nav {
         display: none;
     }
+
 }

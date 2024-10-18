@@ -1,0 +1,41 @@
+.desktop-title {
+    margin: 1em;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+
+    .activity-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 1em;
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #7F56D9;
+        width: 420px;
+        height: 165px;
+
+        .activity-item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
