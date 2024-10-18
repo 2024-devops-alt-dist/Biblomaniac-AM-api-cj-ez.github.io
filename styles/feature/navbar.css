@@ -1,5 +1,9 @@
 /* Desktop nav CSS */
 
+.desktop-title {
+    margin: 1em;
+}
+
 .desktop-nav {
     border-bottom: 0.1em solid #000;
     margin-top: 0.5em;
@@ -31,26 +35,26 @@
             color: #000;
         }
     }
-}
 
-.btn-grp {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    align-items: center;
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .btn {
-        background-color: #7F56D9;
-        color: #ffffff;
-        width: 75px;
-        height: 35px;
-        border-radius: 8px;
-        border-color: #7F56D9;
+    .btn-grp {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    
+        .btn {
+            background-color: #7F56D9;
+            color: #ffffff;
+            width: 75px;
+            height: 35px;
+            border-radius: 8px;
+            border-color: #7F56D9;
+        }
     }
 }
 
@@ -65,6 +69,7 @@
     bottom: 0;
     width: 100%;
     border-top: 0.1em solid #000;
+    background-color: #ffffff;
 
     ul {
         display: flex;
