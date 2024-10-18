@@ -1,0 +1,55 @@
+.livre {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+
+    img {
+        border-radius: 20px;
+        object-fit: contain;
+        height: 20vh;
+
+    } 
+}
+
+
+
+
+
+.resume {
+    display: flex;
+    margin-top: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    margin-left: 15px;
+}
+
+.rate {
+    width: 30px;
+    height: 30px;
+    fill: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(145, 88, 198);
+    border-radius: 10px;
+    align-items: center;
+    border: 20px;
+    height: 80px;
+    width: 300px;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.pages {
+    display: flex;
+    margin-right: 50px;
+}
