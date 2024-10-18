@@ -1,6 +1,13 @@
-.livre {
+.resume {
     display: flex;
-    justify-content: left;
+    margin-top: 50px;
+}
+
+
+
+.livre {
+display: flex;
+justify-content: left;
     margin-left: 30px;
 
     img {
@@ -9,15 +16,6 @@
         height: 20vh;
 
     } 
-}
-
-
-
-
-
-.resume {
-    display: flex;
-    margin-top: 50px;
 }
 
 .description {
@@ -44,12 +42,21 @@
     align-items: center;
     border: 20px;
     height: 80px;
-    width: 300px;
-    margin-left: 65px;
+    width: 350px;
+    margin-left: 40px;
     margin-top: 50px;
 }
 
 .pages {
     display: flex;
     margin-right: 50px;
+    flex-direction: column;
+}
+
+.yellowbar {
+    background-color: yellow;
+    height: 3px;
+    width: 70px;
+    border-radius: 20px;
+    margin-top: 5px;
 }
