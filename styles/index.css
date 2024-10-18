@@ -1,6 +1,7 @@
-@import url("activity_card.css");
-@import url("navbar.css");
-@import url("popular_books.css");
+@import url("feature/activity_card.css");
+@import url("feature/navbar.css");
+@import url("feature/popular_books.css");
+@import url("screen/login.css");
 
 * {
     margin: 0;
