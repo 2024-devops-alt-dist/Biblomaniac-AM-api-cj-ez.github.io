@@ -78,7 +78,7 @@
     margin-top: 5px;
 }
 
-.categories {
+.categories-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
