@@ -1,0 +1,107 @@
+/* Desktop nav CSS */
+
+.desktop-title {
+    margin: 1em;
+}
+
+.desktop-nav {
+    border-bottom: 0.1em solid #000;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .nav-item {
+        display: flex;
+        flex: 5;
+        gap: 2em;
+        justify-content: start;
+        align-items: center;
+    
+        figure {
+            margin: 0 1em;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+    
+        li a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    .btn-grp {
+        display: flex;
+        flex: 1;
+        justify-content: end;
+        align-items: center;
+        margin-right: 1em;
+    
+        .btn {
+            text-decoration: none;
+            background-color: #7F56D9;
+            color: #ffffff;
+            width: 75px;
+            height: 35px;
+            border-radius: 8px;
+            border-color: #7F56D9;
+            padding-top: 0.5em;
+            text-align: center;
+        }
+
+    }
+}
+
+/* Mobile nav CSS */
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mobile-title {
+        margin: 1em;
+    }
+
+    .btn {
+        text-decoration: none;
+        background-color: #7F56D9;
+        color: #ffffff;
+        width: 75px;
+        height: 35px;
+        border-radius: 8px;
+        border-color: #7F56D9;
+        padding-top: 0.5em;
+        text-align: center;
+        margin-right: 1em;
+    }
+}
+
+
+.mobile-nav {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.1em solid #000;
+    background-color: #ffffff;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .nav-icon {
+        width: 2em;
+        height: 2em;
+        fill: #7F56D9;
+        margin: 1em 0;
+    }
+}

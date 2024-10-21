@@ -1,0 +1,140 @@
+.resume {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+
+.livre {
+    display: flex;
+    justify-content: left;
+    margin: auto;
+    margin-left: 30px;
+
+
+    img {
+        border-radius: 20px;
+        object-fit: contain;
+        height: 20vh;
+
+    } 
+}
+
+.description {
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    margin-right: 140px;
+    gap: 5px;
+
+}
+
+.rate {
+    width: 50px;
+    fill: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(145, 88, 198);
+    border-radius: 10px;
+    align-items: center;
+    border: 20px;
+    height: 80px;
+    width: 360px;
+    margin:auto;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.pages {
+    display: flex;
+    margin-right: 50px;
+    flex-direction: column;
+}
+
+.yellowbar {
+    background-color: yellow;
+    height: 3px;
+    width: 70px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 60px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.texteresume {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 320px;
+
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+
+
+}
+
+.review__rev {
+    display: flex;
+    margin-top: 15px;
+    color: gray;
+}
+
+.review__rate {
+    width: 70px;
+    fill: orange;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+
+.review__rev { 
+    display: flex;
+    flex-direction: row;
+
+}
+.review__text {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.review__time {
+    color: gray;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
