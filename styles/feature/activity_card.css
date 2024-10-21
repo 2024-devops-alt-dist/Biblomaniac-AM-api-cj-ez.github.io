@@ -22,8 +22,9 @@
         .activity-item-content {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-around;
+            align-items: start;
+            gap: 0.25em;
 
             a {
                 color: #fff;
