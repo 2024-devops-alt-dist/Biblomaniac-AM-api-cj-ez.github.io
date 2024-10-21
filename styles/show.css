@@ -8,6 +8,7 @@
 .livre {
     display: flex;
     justify-content: left;
+    margin: auto;
     margin-left: 30px;
 
 
@@ -23,20 +24,20 @@
     display: flex;
     flex-direction:column;
     justify-content: end;
-    align-items: center;
-    margin-left: 15px;
+    margin-right: 140px;
+    gap: 5px;
+
 }
 
 .rate {
-    width: 30px;
-    height: 30px;
+    width: 50px;
     fill: orange;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.review {
+.infos {
     display: flex;
     justify-content: center;
     background-color: rgb(145, 88, 198);
@@ -45,6 +46,7 @@
     border: 20px;
     height: 80px;
     width: 360px;
+    margin:auto;
     margin-left: 25px;
     margin-top: 50px;
 }
@@ -68,6 +70,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 60px;
+    margin: auto;
     margin-top: 50px;
     margin-left: 50px;
 
@@ -87,4 +90,51 @@
 
 }
 
+.review {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
 
+
+}
+
+.review__rev {
+    display: flex;
+    margin-top: 15px;
+    color: gray;
+}
+
+.review__rate {
+    width: 70px;
+    fill: orange;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+
+.review__rev { 
+    display: flex;
+    flex-direction: row;
+
+}
+.review__text {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.review__time {
+    color: gray;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
