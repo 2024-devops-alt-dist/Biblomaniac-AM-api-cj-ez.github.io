@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomaniac - Home</title>
-    <link href="styles/index.css" rel="stylesheet" />
+    <title>Bibliomaniac - Books</title>
+    <link href="../styles/index.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <!-- Title mobile view -->
         <section class="mobile-header">
-            <h1 class="mobile-title">Activity</h1>
-            <a class="btn" href="pages/login.html">Log In</a>
+            <h1 class="mobile-title">Books</h1>
+            <a class="btn" href="login.html">Log In</a>
         </section>
         <!-- Navigation mobile view -->
         <nav class="mobile-nav">
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="../index.html">
                         <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/books.html">
+                    <a href="books.html">
                         <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/categories.html">
+                    <a href="categories.html">
                         <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/booking.html">
+                    <a href="booking.html">
                         <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                             <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -61,16 +61,16 @@
             <ul>
                 <div class="nav-item">
                     <figure>
-                        <img src="images/Logomark.svg" alt="Bibliomaniac logo" />
+                        <img src="../images/Logomark.svg" alt="Bibliomaniac logo" />
                         <figcaption>Bibliomaniac</figcaption>
                     </figure>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/books.html">Books</a></li>
-                    <li><a href="pages/categories.html">Categories</a></li>
-                    <li><a href="pages/booking.html">Reservation</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="booking.html">Reservation</a></li>
                 </div>
                 <div class="btn-grp">
-                    <a class="btn" href="pages/login.html">Log In</a>
+                    <a class="btn" href="login.html">Log In</a>
                 </div>
             </ul>
         </nav>
@@ -78,49 +78,13 @@
 
     <main>
         <!-- Title desktop view -->
-        <h1 class="desktop-title">Activity</h1>
-        <!-- Activity section -->
-        <section class="activity">
-            <article class="activity-item">
-                <figure>
-                    <img src="images/activity card/livres.png" alt="Books" />
-                </figure>
-                <div class="activity-item-content">
-                    <h2>Books</h2>
-                    <p>View all books available in the library</p>
-                    <a href="pages/books.html">View</a>
-                </div>
-            </article>
-            <article class="activity-item">
-                <figure>
-                    <img src="images/activity card/categorie.png" alt="Books" />
-                </figure>
-                <div class="activity-item-content">
-                    <h2>Category</h2>
-                    <p>View all categories available in the library</p>
-                    <a href="pages/categories.html">View</a>
-                </div>
-            </article>
-            <article class="activity-item">
-                <figure>
-                    <img src="images/activity card/reserve-maintenant.png" alt="Books" />
-                </figure>
-                <div class="activity-item-content">
-                    <h2>Reservation</h2>
-                    <p>View all reservations made in the library</p>
-                    <a href="pages/booking.html">View</a>
-                </div>
-            </article>
-        </section>
-
-        <!-- Popular books section -->
+        <h1 class="desktop-title">Books</h1>
         <section class="popular-books">
-            <h2 class="popular-books-title">Popular Books</h2>
             <div class="popular-books-container">
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/don_quichotte.html">
-                            <img src="images/books/don quichotte.jpeg" alt="Book cover" />
+                        <a href="books/don_quichotte.html">
+                            <img src="../images/books/don quichotte.jpeg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
@@ -131,20 +95,21 @@
                 </article>
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/XIII.html">
-                            <img src="images/books/le-jour-du-soleil-noir.jpg" alt="Book cover" />
+                        <a href="books/XIII.html">
+                            <img src="../images/books/le-jour-du-soleil-noir.jpg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
-                        <h3>Le jour du Soleil Noir</h3>
-                        <p>Jean Van Hamme</p>
-                        <p>Comics, Adventure</p>
-                    </div>
+                        <div class="popular-book-content">
+                            <h3>Le jour du Soleil Noir</h3>
+                            <p>Jean Van Hamme</p>
+                            <p>Comics, Adventure</p>
+                        </div>
                 </article>
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/les_miserables.html">
-                            <img src="images/books/les_miserables.jpg" alt="Book cover" />
+                        <a href="books/les_miserables.html">
+                            <img src="../images/books/les_miserables.jpg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
@@ -155,8 +120,8 @@
                 </article>
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/harry_potter_a_l'ecole_des_sorciers.html">
-                            <img src="images/books/Harry-Potter-a-l-ecole-des-sorciers.jpg" alt="Book cover" />
+                        <a href="books/harry_potter_a_l'ecole_des_sorciers.html">
+                            <img src="../images/books/Harry-Potter-a-l-ecole-des-sorciers.jpg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
@@ -167,8 +132,8 @@
                 </article>
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/le_petit_prince.html">
-                            <img src="images/books/le_petit_prince.jpg" alt="Book cover" />
+                        <a href="books/le_petit_prince.html">
+                            <img src="../images/books/le_petit_prince.jpg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
@@ -179,81 +144,14 @@
                 </article>
                 <article class="popular-book">
                     <figure>
-                        <a href="pages/books/1984.html">
-                            <img src="images/books/1984.jpg" alt="Book cover" />
+                        <a href="books/1984.html">
+                            <img src="../images/books/1984.jpg" alt="Book cover" />
                         </a>
                     </figure>
                     <div class="popular-book-content">
                         <h3>1984</h3>
                         <p>Georges Orwell</p>
                         <p>Science-fiction, Dystopie</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Categories section -->
-        <section class="categories">
-            <h2 class="categories-title">Categories</h2>
-            <div class="categories-container">
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/love-books.png" alt="Romance" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Romance</h3>
-                        <p>View all books in the Romance category</p>
-                        <a href="pages/categories.html">View</a>
-                    </div>
-                </article>
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/horror.png" alt="Horror" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Horror</h3>
-                        <p>View all books in the Horror category</p>
-                        <a href="pages/categories.html">View</a>
-                    </div>
-                </article>
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/ufo.png" alt="Science Fiction" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Science Fiction</h3>
-                        <p>View all books in the Science Fiction category</p>
-                        <a href="pages/categories.html">View</a>
-                    </div>
-                </article>
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/education.png" alt="Education" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Education</h3>
-                        <p>View all books in the Education category</p>
-                        <a href="pages/categories.html">View</a>
-                    </div>
-                </article>
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/reading.png" alt="Children" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Children</h3>
-                        <p>View all books in the Children category</p>
-                        <a href="pages/categories.html">View</a>
-                    </div>
-                </article>
-                <article class="category">
-                    <figure>
-                        <img src="images/categories/religion.png" alt="Religion" />
-                    </figure>
-                    <div class="category-content">
-                        <h3>Religion</h3>
-                        <p>View all books in the Religion category</p>
-                        <a href="pages/categories.html">View</a>
                     </div>
                 </article>
             </div>
