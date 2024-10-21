@@ -2,6 +2,8 @@
 @import url("feature/navbar.css");
 @import url("feature/popular_books.css");
 @import url("feature/categories.css");
+@import url("feature/due_date.css");
+@import url("feature/calendar.css");
 @import url("screen/login.css");
 
 * {
