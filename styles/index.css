@@ -5,6 +5,7 @@
 @import url("feature/due_date.css");
 @import url("feature/calendar.css");
 @import url("screen/login.css");
+@import url("screen/show.css");
 
 * {
     margin: 0;
@@ -41,6 +42,16 @@ main {
         .category {
             width: 80%;
         }
+    }
+
+    .book-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-informations,
+    .book-reviews {
+        width: 100%;
     }
 }
 
