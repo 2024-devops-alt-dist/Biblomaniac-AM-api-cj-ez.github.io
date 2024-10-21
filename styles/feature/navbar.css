@@ -39,8 +39,9 @@
     .btn-grp {
         display: flex;
         flex: 1;
-        justify-content: space-evenly;
+        justify-content: end;
         align-items: center;
+        margin-right: 1em;
     
         a {
             text-decoration: none;
@@ -60,9 +61,26 @@
 
 /* Mobile nav CSS */
 
-.mobile-title {
-    margin: 1em;
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mobile-title {
+        margin: 1em;
+    }
+
+    .btn {
+        background-color: #7F56D9;
+        color: #ffffff;
+        width: 75px;
+        height: 35px;
+        margin-right: 1em;
+        border-radius: 8px;
+        border-color: #7F56D9;
+    }
 }
+
 
 .mobile-nav {
     position:fixed;
