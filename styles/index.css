@@ -1,6 +1,7 @@
 @import url("feature/activity_card.css");
 @import url("feature/navbar.css");
 @import url("feature/popular_books.css");
+@import url("feature/categories.css");
 @import url("screen/login.css");
 
 * {
@@ -29,7 +30,18 @@ main {
             flex-direction: column;
         }
     }
+
+    .categories{
+        .categories-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .category {
+            width: 80%;
+        }
+    }
 }
+
 @media screen and (min-width: 800px) {
     .mobile-title,
     .mobile-nav {
