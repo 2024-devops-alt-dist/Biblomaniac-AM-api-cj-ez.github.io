@@ -43,19 +43,18 @@
         align-items: center;
         margin-right: 1em;
     
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-    
         .btn {
+            text-decoration: none;
             background-color: #7F56D9;
             color: #ffffff;
             width: 75px;
             height: 35px;
             border-radius: 8px;
             border-color: #7F56D9;
+            padding-top: 0.5em;
+            text-align: center;
         }
+
     }
 }
 
@@ -71,13 +70,16 @@
     }
 
     .btn {
+        text-decoration: none;
         background-color: #7F56D9;
         color: #ffffff;
         width: 75px;
         height: 35px;
-        margin-right: 1em;
         border-radius: 8px;
         border-color: #7F56D9;
+        padding-top: 0.5em;
+        text-align: center;
+        margin-right: 1em;
     }
 }
 

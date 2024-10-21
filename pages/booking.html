@@ -14,20 +14,28 @@
     }
 
     .desktop-nav {
-        .btn-grp {
-            .btn {
-                background-color: #ffffff;
-                color: #000;
-            }
+        .nav-item li a {
+            color: #ffffff;
+        }
+        .btn-grp .btn {
+            background-color: #ffffff;
+            color: #000;
         }
     }
+
+    .mobile-header .btn {
+        background-color: #ffffff;
+        color: #000;
+    }
+
 </style>
+
 <body>
     <header>
         <!-- Title mobile view -->
         <section class="mobile-header">
             <h1 class="mobile-title">Due Date</h1>
-            <button class="btn" href="login.html">Log In</button>
+            <a class="btn" href="pages/login.html">Log In</a>
         </section>
         <!-- Navigation mobile view -->
         <nav class="mobile-nav">
@@ -84,7 +92,7 @@
                     <li><a href="reservation.html">Reservation</a></li>
                 </div>
                 <div class="btn-grp">
-                    <li><button class="btn" href="login.html">Log In</button></li>
+                    <a class="btn" href="pages/login.html">Log In</a>
                 </div>
             </ul>
         </nav>
