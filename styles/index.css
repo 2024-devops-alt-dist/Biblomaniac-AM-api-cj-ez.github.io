@@ -31,7 +31,6 @@ main {
         .popular-book{
             display: flex;
             flex-direction: column;
- 
         }
     }
 
@@ -61,13 +60,4 @@ main {
     .mobile-nav {
         display: none;
     }
-
-}
-
-
-.popular-books-container {
-    border: 1px  black;
-    background-color: rgb(193, 178, 213);
-    border-radius: 5px;
-    filter: blur();
 }
