@@ -78,85 +78,32 @@
 
     <main>
         <!-- Title desktop view -->
-        <h1 class="desktop-title">Books</h1>
+        <h1 class="desktop-title">TOUS NOS LIVRES</h1>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Recherchez votre livre ...." />
+            <button id="search-button">Recherche</button>
+        </div>
+        
         <section class="popular-books">
-            <div class="popular-books-container">
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/don_quichotte.html">
-                            <img src="../images/books/don quichotte.jpeg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <h3>Don Quichotte</h3>
-                        <p>Miguel de Cervantès</p>
-                        <p>Adventure, Roman</p>
-                    </div>
-                </article>
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/XIII.html">
-                            <img src="../images/books/le-jour-du-soleil-noir.jpg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <div class="popular-book-content">
-                            <h3>Le jour du Soleil Noir</h3>
-                            <p>Jean Van Hamme</p>
-                            <p>Comics, Adventure</p>
-                        </div>
-                </article>
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/les_miserables.html">
-                            <img src="../images/books/les_miserables.jpg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <h3>Les Misérables</h3>
-                        <p>Victor Hugo</p>
-                        <p>Roman, Drame</p>
-                    </div>
-                </article>
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/harry_potter_a_l'ecole_des_sorciers.html">
-                            <img src="../images/books/Harry-Potter-a-l-ecole-des-sorciers.jpg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <h3>Harry Potter à l'école des sorciers</h3>
-                        <p>J.K. Rowling</p>
-                        <p>Fantastique, Jeunesse</p>
-                    </div>
-                </article>
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/le_petit_prince.html">
-                            <img src="../images/books/le_petit_prince.jpg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <h3>Le Petit Prince</h3>
-                        <p>Antoine de Saint-Exupéry</p>
-                        <p>Conte philosophique</p>
-                    </div>
-                </article>
-                <article class="popular-book">
-                    <figure>
-                        <a href="books/1984.html">
-                            <img src="../images/books/1984.jpg" alt="Book cover" />
-                        </a>
-                    </figure>
-                    <div class="popular-book-content">
-                        <h3>1984</h3>
-                        <p>Georges Orwell</p>
-                        <p>Science-fiction, Dystopie</p>
-                    </div>
-                </article>
+            <div id="popular-books-container" class="popular-books-container">
+                <div class="book-list"></div>
+                <div class="pagination-controls">
+                    <button id="prev-button" disabled>Précédent</button>
+                    <span id="page-info">Page 1</span>
+                    <button id="next-button">Suivant</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="seasonal-selections">
+            <h2>NOTRE SELECTION POUR HALLOWEEN</h2>
+            <div class="seasonal-books-container">
+                <div class="seasonal-book-list"></div>
             </div>
         </section>
     </main>
+    
+    <script src="../script.js"></script>
 </body>
-
 </html>
