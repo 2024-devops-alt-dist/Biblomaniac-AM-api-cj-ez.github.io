@@ -1,43 +1,118 @@
-.popular-books{
+.desktop-title {
+    text-align: center;
+}
+
+.popular-books, .seasonal-selections {
     margin: 1em;
+}
 
-    .popular-books-title {
-        margin: 0.5em;
+.book-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em; 
+}
+
+.popular-book {
+    display: flex;
+    flex: 1 1 calc(33% - 1em); 
+    box-sizing: border-box;
+    padding: 2.5em;
+}
+
+.popular-book img {
+    object-fit: contain;
+    height: 30vh;
+    width: auto;
+    margin-right: 1em;
+}
+
+.popular-book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+/* SearchBar */
+.search-container {
+    margin: 25px 30%; 
+    display: flex; 
+    gap: 0.5em; 
+}
+
+#search-input {
+    flex: 1; 
+    padding: 0.5em;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 0.5em 1em; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgb(182, 152, 220); 
+    color: white; 
+    cursor: pointer; 
+}
+
+#search-button:hover {
+    background-color: rgb(121, 90, 162); 
+}
+
+.no-books-message {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    margin : 50px auto;
+}
+
+.seasonal-selections {
+    padding: 50px;
+    background-color: rgb(193, 178, 213);
+    border-radius: 5px;
+}
+
+.seasonal-books-container {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 1em 0; 
+}
+
+.seasonal-book {
+    width: 450px;
+    transition: transform 0.2s;
+}
+
+.seasonal-book-list {
+    display: inline-flex; 
+    gap: 1em;
+}
+
+.popular-book-content-seasonal {
+    max-width: 100%;
+}
+
+.popular-book-content-seasonal h3 {
+    overflow: visible; 
+    white-space: normal;
+    max-width: 100%; 
+    line-height: 1.2;
+}
+
+.seasonal-book:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .search-container {
+        margin: 15px 10%;
     }
+}
 
-    .popular-books-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        border: 1px  black;
-        background-color: rgb(193, 178, 213);
-        border-radius: 5px;
-    }
-
-    .popular-book {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        padding: 1em;
-        margin: 1em;
-
-
-        img {
-            display: block;
-            margin: auto;
-            aspect-ratio: 1/1;
-            object-fit: contain;
-            height: 30vh;
-        }
-
-        .popular-book-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-        }
+@media (max-width: 480px) {
+    .search-container {
+        margin: 10px 5%;
     }
 }
