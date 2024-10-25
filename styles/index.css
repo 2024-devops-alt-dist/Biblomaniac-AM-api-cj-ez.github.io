@@ -61,3 +61,51 @@ main {
         display: none;
     }
 }
+
+.popular-books {
+    padding: 25px 45px;
+}
+
+.popular-books-container-home {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1em 0;
+}
+
+.popular-book-list-home {
+    display: inline-flex;
+    gap: 1em;
+}
+
+.popular-book-home {
+    display: flex;
+    flex: 1 1 calc(33% - 1em); 
+    width: 450px;
+    margin: 20px;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.popular-book-home img {
+    object-fit: contain;
+    height: 30vh;
+    width: auto;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+
+.popular-book-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.popular-book-content h3,
+.popular-book-content p {
+    margin: 0; 
+    white-space: normal;
+}
+
+.popular-book-home:hover {
+    transform: scale(1.05); 
+}

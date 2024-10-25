@@ -5,7 +5,7 @@ let allBooks = [];
 async function fetchData(query) {
     try {
         const response = await fetch(
-            `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=40`
+            `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=newest&printType=books&maxResults=40`
         );
         const data = await response.json();
         return data.items || []; 
@@ -24,12 +24,14 @@ function displayBooks(books, containerSelector, isSeasonal = false) {
         return;
     }
 
+    const maxTitleLength = 30;
+
     books.forEach(book => {
         const bookInfo = book.volumeInfo;
 
-        const title = bookInfo.title || 'Unknown Title';
-        const author = bookInfo.authors ? bookInfo.authors.join(', ') : 'Unknown Author';
-        const categories = bookInfo.categories ? bookInfo.categories.join(', ') : 'No Category';
+        const title = truncateTitle(bookInfo.title || 'Titre inconnu', maxTitleLength);
+        const author = bookInfo.authors ? bookInfo.authors.join(', ') : 'Auteur inconnu';
+        const categories = bookInfo.categories ? bookInfo.categories.join(', ') : 'Pas de catégorie';
         const thumbnail = bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : '../images/default-book.jpg';
         const bookUrl = bookInfo.previewLink || '#';
 
@@ -93,19 +95,28 @@ document.getElementById('next-button').addEventListener('click', () => {
 
 async function loadSeasonalBooks() {
     const currentMonth = new Date().getMonth();
+    const seasonalTitleElement = document.getElementById('seasonal-title');
 
-    let seasonalQuery;
-    if (currentMonth === 9) {
-        seasonalQuery = 'horror OR thriller';
-    } else if (currentMonth === 10 || currentMonth === 11) {
-        seasonalQuery = 'romance OR christmas';
-    } else {
-        seasonalQuery = 'books';
+    switch (currentMonth) {
+        case 9: // Octobre
+            seasonalTitleElement.textContent = "NOTRE SELECTION POUR HALLOWEEN";
+            seasonalQuery = 'horror OR thriller';
+            break;
+        case 10: // Novembre
+        case 11: // Décembre
+            seasonalTitleElement.textContent = "NOTRE SELECTION POUR NOEL";
+            seasonalQuery = 'romance OR christmas';
+            break;
+        default: // Pour le reste de l'année
+            seasonalTitleElement.textContent = "NOTRE SELECTION POUR VOUS";
+            seasonalQuery = 'books';
+            break;
     }
 
     const seasonalBooks = await fetchData(seasonalQuery);
     displayBooks(seasonalBooks.slice(0, 6), '.seasonal-book-list', true); // Limite 6 livres
 }
+
 
 document.getElementById('search-button').addEventListener('click', () => {
     const query = document.getElementById('search-input').value.trim(); 
@@ -125,3 +136,11 @@ window.addEventListener('load', () => {
     loadDefaultBooks();
     loadSeasonalBooks();
 });
+
+// Fonction pour tronquer un titre si nécessaire
+function truncateTitle(title, maxLength) {
+    if (title.length > maxLength) {
+        return title.slice(0, maxLength - 3) + '...'; 
+    }
+    return title; 
+}
