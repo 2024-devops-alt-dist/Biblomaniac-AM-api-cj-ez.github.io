@@ -5,7 +5,7 @@ let allBooks = [];
 async function fetchData(query) {
     try {
         const response = await fetch(
-            `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=newest&printType=books&maxResults=40`
+            `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=books&maxResults=40`
         );
         const data = await response.json();
         return data.items || []; 

@@ -31,7 +31,7 @@ async function displayTopRatedBooks() {
         const bookAuthors = bookInfo.authors ? bookInfo.authors.join(', ') : 'Auteur inconnu';
         const bookThumbnail = bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : '../images/default-book.jpg';
         const bookcategories = bookInfo.categories ? bookInfo.categories.join(', ') : 'Pas de catégorie';
-        const bookUrl = `book_details.html?id=${bookId}`;
+        const bookUrl = `pages/book_details.html?id=${bookId}`;
 
         const bookElement = document.createElement('article');
         bookElement.classList.add('popular-book-home');
