@@ -26,12 +26,13 @@ function displayBooks(books, containerSelector, isSeasonal = false) {
 
     books.forEach(book => {
         const bookInfo = book.volumeInfo;
+        const bookId = book.id;
 
         const title = bookInfo.title || 'Unknown Title';
         const author = bookInfo.authors ? bookInfo.authors.join(', ') : 'Unknown Author';
         const categories = bookInfo.categories ? bookInfo.categories.join(', ') : 'No Category';
         const thumbnail = bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : '../images/default-book.jpg';
-        const bookUrl = bookInfo.previewLink || '#';
+        const bookUrl = `book_details.html?id=${bookId}`;
 
         const articleClass = isSeasonal ? 'popular-book seasonal-book' : 'popular-book';
         const contentClass = isSeasonal ? 'popular-book-content-seasonal' : 'popular-book-content';
